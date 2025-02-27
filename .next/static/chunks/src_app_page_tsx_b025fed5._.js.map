@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/pslay/Documents/github%20clones%20/portoflioo/src/app/page.tsx"],"sourcesContent":["\"use client\"\n\nimport React from 'react';\nimport Image from 'next/image';\n\nexport default function Home() {\n  return (\n    <div className=\"container\">\n      <div className=\"box box1\">box1</div>\n      <div className=\"box box2 relative\">\n      <Image \n          src=\"/PatAnimated.png\" \n          alt=\"Pat Animated\"\n          layout=\"fill\"\n          objectFit=\"cover\"\n          className=\"rounded-lg\"\n        />\n      </div>\n      <div className=\"box box3\">box3</div>\n      <div className=\"box box4\">box4</div>\n      <div className=\"box box5\">box5</div>\n      <div className=\"box box6\">box6</div>\n      <div className=\"box box7\">box7</div>\n      <div className=\"box box8\">box8</div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAGA;AAHA;;;AAKe,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;;0BACb,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BACf,cAAA,6LAAC,gIAAA,CAAA,UAAK;oBACF,KAAI;oBACJ,KAAI;oBACJ,QAAO;oBACP,WAAU;oBACV,WAAU;;;;;;;;;;;0BAGd,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BAAW;;;;;;0BAC1B,6LAAC;gBAAI,WAAU;0BAAW;;;;;;;;;;;;AAGhC;KArBwB","debugId":null}},
+    {"offset": {"line": 106, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
