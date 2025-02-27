@@ -12,7 +12,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* F6F0FF */
+    --background: #F9F7F6;
     --foreground: #ededed;
   }
 }
@@ -33,7 +34,8 @@ body {
 }
 
 .box {
-  background-color: #e0e0e0;
+  /* EDE7F6 */
+  background-color: #E9D7E3; 
   border-radius: 10px;
   min-height: 50px;
   color: #000000;
