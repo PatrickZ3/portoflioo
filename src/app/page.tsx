@@ -7,20 +7,24 @@ import ThemeToggle from './components/ThemeToggle';
 export default function Home() {
   return (
     <div className="min-h-screen transition-colors duration-300">
-      <div className="switch">
-        <ThemeToggle />
-      </div>
+
       <div className="container">
         <div className="box box1">
           <div className="window-header">
             <span>Box 1</span>
+
             <div className="window-controls">
               <div style={{ backgroundColor: "#FF5F56" }}></div>
               <div style={{ backgroundColor: "#FFBD2E" }}></div>
               <div style={{ backgroundColor: "#27C93F" }}></div>
             </div>
           </div>
-          <div className="window-content">box1 content</div>
+          <div className="window-content">
+            <div className="content-switch">
+              <span>test</span>
+              <ThemeToggle />
+            </div>
+          </div>
         </div>
 
         <div className="box box2 relative">

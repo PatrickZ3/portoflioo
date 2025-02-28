@@ -887,6 +887,7 @@ body {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(12, auto);
@@ -966,12 +967,10 @@ body {
   white-space: pre-line;
 }
 
-.switch {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  color: #4b5563;
-  font-size: 1rem;
+.content-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box1 {
@@ -1034,12 +1033,12 @@ body {
 
 .dark .window-header {
   background: #3f3f3f;
-  color: #fafafa;
+  color: #b7b7b7;
   border-bottom: 1px solid #3e3e3e;
 }
 
 .dark .window-content {
-  color: #ededed;
+  color: #fff;
 }
 
 @property --tw-translate-x {

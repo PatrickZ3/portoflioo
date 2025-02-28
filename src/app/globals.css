@@ -34,6 +34,7 @@ body {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(12, auto);
@@ -82,6 +83,7 @@ body {
 .window-content {
   padding: 10px;
   color: #4A444E;
+  
 }
 
 .sticky-note {
@@ -115,12 +117,10 @@ body {
   white-space: pre-line;
 }
 
-.switch {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  color: #4B5563;
-  font-size: 1rem;
+.content-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -157,10 +157,10 @@ body {
 
 .dark .window-header {
   background: #3f3f3f;
-  color: #FAFAFA;
+  color: #b7b7b7;
   border-bottom: 1px solid #3E3E3E;
 }
 
 .dark .window-content {
-  color: #EDEDED;
+  color: #ffffff;
 }
