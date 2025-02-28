@@ -224,7 +224,7 @@ export default function Home() {
         </div>
 
         <div className="box box7 sticky-note">
-          <a href="/patricklay_resume.pdf" download className="sticky-note-content">
+          <a href="/PatrickLay_Resume.pdf" download className="sticky-note-content">
             <p>Download Resume</p>
             <div className="resume-image">
               <Image
