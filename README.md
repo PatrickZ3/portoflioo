@@ -14,8 +14,9 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
 
-### Portfolio Dark Theme
+Portfolio Dark Theme
 ![Portfolio Dark](./public/portfolioDark.png)
 This is the dark mode theme of my portfolio.
 
