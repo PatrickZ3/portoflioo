@@ -12,6 +12,11 @@
   --secondary: #EDECED;   
 }
 
+.dark {
+  --background: #171717;
+  --foreground: #FAFAFA;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* F6F0FF */

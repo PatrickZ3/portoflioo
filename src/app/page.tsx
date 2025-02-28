@@ -2,12 +2,13 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import ThemeToggle from './components/ThemeToggle';
 
 export default function Home() {
   return (
     <div>
       <div className="switch">
-        placeholder
+        <ThemeToggle />
       </div>
       <div className="container">
         <div className="box box1">

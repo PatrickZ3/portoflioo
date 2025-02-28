@@ -6,7 +6,10 @@
   "path": "static/chunks/src_app_page_tsx_8b298505._.js",
   "chunks": [
     "static/chunks/node_modules_next_d2ed38d8._.js",
-    "static/chunks/src_app_page_tsx_b025fed5._.js"
+    "static/chunks/node_modules_react-icons_fa_index_mjs_d2e2d7f5._.js",
+    "static/chunks/node_modules_react-icons_bs_index_mjs_0b2b1793._.js",
+    "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+    "static/chunks/src_app_87543e93._.js"
   ],
   "source": "dynamic"
 });
