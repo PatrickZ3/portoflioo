@@ -33,7 +33,6 @@
     --color-green-700: oklch(.527 .154 150.069);
     --color-green-800: oklch(.448 .119 151.328);
     --color-green-900: oklch(.393 .095 152.535);
-    --color-teal-500: oklch(.704 .14 182.503);
     --color-blue-100: oklch(.932 .032 255.585);
     --color-blue-200: oklch(.882 .059 254.128);
     --color-blue-300: oklch(.809 .105 251.813);
@@ -440,6 +439,11 @@
     border-collapse: collapse;
   }
 
+  .translate-x-7 {
+    --tw-translate-x: calc(var(--spacing) * 7);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
   .translate-x-8 {
     --tw-translate-x: calc(var(--spacing) * 8);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -536,10 +540,6 @@
     border-style: solid;
   }
 
-  .border-\[\#EDECED\] {
-    border-color: #edeced;
-  }
-
   .border-black {
     border-color: var(--color-black);
   }
@@ -556,16 +556,8 @@
     border-color: #0000;
   }
 
-  .bg-\[\#EDECED\] {
-    background-color: #edeced;
-  }
-
-  .bg-\[\#FAFAFA\] {
-    background-color: #fafafa;
-  }
-
-  .bg-\[black\] {
-    background-color: #000;
+  .border-white {
+    border-color: var(--color-white);
   }
 
   .bg-black {
@@ -582,10 +574,6 @@
 
   .bg-gray-900 {
     background-color: var(--color-gray-900);
-  }
-
-  .bg-teal-500 {
-    background-color: var(--color-teal-500);
   }
 
   .bg-white {
@@ -842,12 +830,6 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    .dark\:bg-gray-900 {
-      background-color: var(--color-gray-900);
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
     .dark\:bg-white\/\[\.06\] {
       background-color: color-mix(in oklab, var(--color-white) 6%, transparent);
     }
@@ -1030,6 +1012,34 @@ body {
 .box8 {
   grid-column: 7 / 15;
   grid-row: 30 / 46;
+}
+
+.dark body {
+  background: #171717;
+  color: #fafafa;
+}
+
+.dark .sticky-note {
+  background-color: #fff4c2 !important;
+  border: 1px solid #e5d087 !important;
+  color: #3a3a3a !important;
+}
+
+.dark .box {
+  background: #2e2e2e;
+  color: #fafafa;
+  border: 1px solid #3e3e3e;
+  box-shadow: 0 0 15px #fff3, 0 4px 8px #0006;
+}
+
+.dark .window-header {
+  background: #3f3f3f;
+  color: #fafafa;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.dark .window-content {
+  color: #ededed;
 }
 
 @property --tw-translate-x {

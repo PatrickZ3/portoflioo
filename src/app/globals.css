@@ -132,3 +132,35 @@ body {
 .box6 { grid-column: 1 / 7; grid-row: 22 / 46; }
 .box7 { grid-column: 7 / 8; grid-row: 22 / 30; }
 .box8 { grid-column: 7 / 15; grid-row: 30 / 46; }
+
+
+.dark body {
+  background: #171717;
+  color: #FAFAFA;
+}
+
+.dark .sticky-note {
+  background-color: #FFF4C2 !important;
+  border: 1px solid #E5D087 !important;
+  color: #3A3A3A !important;
+}
+
+.dark .box {
+  background: #2E2E2E;
+  color: #FAFAFA;
+  border: 1px solid #3E3E3E;
+  box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.2),  
+    0 4px 8px rgba(0, 0, 0, 0.4);       
+}
+
+
+.dark .window-header {
+  background: #3f3f3f;
+  color: #FAFAFA;
+  border-bottom: 1px solid #3E3E3E;
+}
+
+.dark .window-content {
+  color: #EDEDED;
+}

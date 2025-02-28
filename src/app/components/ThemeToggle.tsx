@@ -25,11 +25,11 @@ export default function ThemeToggle() {
 
     return (
         <div 
-            className={`relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1 transition-colors duration-300 ${darkMode ? 'bg-gray-900' : 'bg-white border-2 border-gray-400'}`} 
+            className={`relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1 transition-colors duration-300 ${darkMode ? 'bg-gray-900 border-2 border-white' : 'bg-white border-2 border-gray-400'}`} 
             onClick={() => setDarkMode(!darkMode)}
         >
             <FaMoon className="text-white" size={18} />
-            <div className={`absolute w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ${darkMode ? 'translate-x-8 bg-white' : 'bg-gray-400'}`}>
+            <div className={`absolute w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ${darkMode ? 'translate-x-7 bg-white' : 'bg-gray-400'}`}>
             </div>
             <BsSunFill className="ml-auto text-yellow-400" size={18}/>
         </div>
