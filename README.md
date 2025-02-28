@@ -23,3 +23,7 @@ This is the dark mode theme of my portfolio.
 ### Portfolio Light Theme
 ![Portfolio Light](./public/portfolioLight.png)
 This is the light mode theme of my portfolio.
+
+Additional Features
+- Sticky notes can be pressed and you can download my resume
+- LinkedIn & Github will be uploaded to mine
