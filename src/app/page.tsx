@@ -4,7 +4,8 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import ThemeToggle from './components/ThemeToggle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub  } from '@fortawesome/free-brands-svg-icons';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const socialMediaLinks = [
@@ -19,6 +20,36 @@ export default function Home() {
       label: 'GitHub'
     }
   ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const projects = [
+    {
+      name: "Coaca",
+      image: "/coacaShowcase.png",
+      description: "A simple weather app."
+    },
+    {
+      name: "Project 2",
+      image: "/PatAnimated.png",
+      description: "A description of Project 2."
+    },
+    {
+      name: "Project 3",
+      image: "/PatAnimated.png",
+      description: "A description of Project 3."
+    }
+  ];
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % projects.length);
+  };
+
+  const goToPreviousSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
+
   return (
     <div className="min-h-screen transition-colors duration-300">
 
@@ -159,7 +190,37 @@ export default function Home() {
               <div style={{ backgroundColor: "#27C93F" }}></div>
             </div>
           </div>
-          <div className="window-content">slide show of personal projects</div>
+          <div className="window-content">
+          <div className="flex justify-between items-center">
+          <button 
+                onClick={goToPreviousSlide} 
+                className="arrow-button"
+              >
+                <FontAwesomeIcon icon={faArrowLeft} />
+              </button>
+
+              <div className="flex items-center">
+                <Image
+                  src={projects[currentSlide].image}
+                  alt={projects[currentSlide].name}
+                  width={250} // Reduced image size
+                  height={200}
+                  className="rounded-lg"
+                />
+                <div className="ml-4">
+                  <h2 className="font-semibold text-xl">{projects[currentSlide].name}</h2>
+                  <p>{projects[currentSlide].description}</p>
+                </div>
+              </div>
+
+              <button 
+                onClick={goToNextSlide} 
+                className="arrow-button"
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="box box7 sticky-note">

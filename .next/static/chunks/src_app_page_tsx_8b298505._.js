@@ -10,6 +10,7 @@
     "static/chunks/node_modules_react-icons_bs_index_mjs_0b2b1793._.js",
     "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
     "static/chunks/node_modules_@fortawesome_free-brands-svg-icons_index_mjs_660f2e06._.js",
+    "static/chunks/node_modules_@fortawesome_free-solid-svg-icons_index_mjs_6d4e8d45._.js",
     "static/chunks/node_modules_69fd3a8b._.js",
     "static/chunks/src_app_87543e93._.js"
   ],

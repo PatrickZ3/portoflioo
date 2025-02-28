@@ -476,6 +476,10 @@
     margin-bottom: calc(var(--spacing) * 2);
   }
 
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+
   .ml-auto {
     margin-left: auto;
   }
@@ -617,6 +621,10 @@
     align-items: center;
   }
 
+  .justify-between {
+    justify-content: space-between;
+  }
+
   .justify-center {
     justify-content: center;
   }
@@ -671,6 +679,11 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
   }
 
   .border-solid {
@@ -861,6 +874,11 @@
 
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
@@ -1243,6 +1261,28 @@ body {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.project-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-info {
+  text-align: left;
+  margin-left: 15px;
+}
+
+button {
+  background-color: #0000;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+button:hover {
+  color: #0275d8;
 }
 
 @property --tw-translate-x {
