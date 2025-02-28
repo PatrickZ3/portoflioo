@@ -115,6 +115,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
   white-space: pre-line;
+  cursor: pointer;
 }
 
 .content-switch {
@@ -164,4 +165,10 @@ body {
 
 .dark .window-content {
   color: #ffffff;
+}
+
+.resume-image {
+  margin-top: 10px; /* Adjust spacing between text and image */
+  display: flex;
+  justify-content: center;
 }

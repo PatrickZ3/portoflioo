@@ -163,10 +163,22 @@ export default function Home() {
         </div>
 
         <div className="box box7 sticky-note">
-          <div className="sticky-note-content">
-            Download Resume
-          </div>
+          <a href="/patricklay_resume.pdf" download className="sticky-note-content">
+            <p>Download Resume</p>
+            <div className="resume-image">
+              <Image
+                src="/resume.png"
+                alt="resume"
+                layout="intrinsic"
+                objectFit="cover"
+                className="rounded-lg"
+                width={60}
+                height={60}
+              />
+            </div>
+          </a>
         </div>
+
 
         <div className="box box8">
           <div className="window-header">
